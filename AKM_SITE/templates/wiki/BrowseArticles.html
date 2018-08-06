@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AskMe - информационный портал отдела ДБО</title>
 
-    <link rel="stylesheet" href="../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/css/base5.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/css/wiki.css">
 
     <!--[if lt IE 9]>
         <script src="../static/js/html5shiv.min.js"></script>
@@ -21,8 +21,8 @@
     <nav class="navbar navbar-default navbar-fixed-top"> 
         
         <div class="navbar-header">
-            <a class="brand-logo" href="index.html"> 
-                <img src="../static/imgs/AkmLogo3D-black.png" 
+            <a class="brand-logo" href="../main/index.html"> 
+                <img src="../../static/imgs/AkmLogo3D-black.png" 
                 class="img-responsive" alt="Главная" />
             </a>
         </div> <!-- end navbar-header -->
@@ -89,7 +89,7 @@
             <h4><span id="navMenuInfoBarTitle">Информационный портал отдела ДБО ФЛ&nbsp; &nbsp;</span>
                 <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                 &nbsp; &nbsp;
-                <span id="navMenuInfoBarApp">Главный раздел</span>
+                <span id="navMenuInfoBarApp">База знаний по сопровождаемым системам</span>
             </h4>
         </div> <!-- end of navMenuInfoBar -->
 
@@ -98,7 +98,7 @@
             <!-- ext-menu-header -->
             <div id="navExtMenuHeader"> 
                 <h4 class="text-white">ВСЕ РАЗДЕЛЫ...</h4>
-                <img src="../static/imgs/welcome96x96.png" />
+                <img src="../../static/imgs/welcome96x96.png" />
             </div>
             
             <!-- ext-menu-content -->
@@ -174,6 +174,9 @@
     </nav> <!-- End of main menu-->
 </header>
 
+<!-- ================================================================================= -->
+<!--                                 WIKI                                              -->
+<!-- ================================================================================= -->
 <!-- basic Content -->
 <div id="basicContent" class ="row">
     <!-- asideContent col -->
@@ -184,7 +187,7 @@
             <div class="panel-heading">
                 <h4 class="panel-title"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                     &nbsp;                           
-                    <a href="#top">Начало раздела</a>
+                    <a href="#top">Начало</a>
                 </h4>
                    <!-- site local search panel -->
                     <form id="searchLocal" role="search">
@@ -202,185 +205,98 @@
 
             <!-- Навигационное меню по разделам контента -->
             <div id="navContentSidePanel" class="panel-body">
-                <ul class="list-unstyled">                        <!--li class="active">
-                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                        &nbsp;<a href="index5.html">Главная</a>
-                    </li-->
-                        <li class="active"><a href="#infoBoard">Информ-доска</a></li>
-                    <li><a href="#features">График</a></li>
-                    <li><a href="#pricing">Faq</a></li>
+                <ul class="list-unstyled">
+                    <li class="active">
+                        <a href="#wikiSection">Разделы</a>
+                        <ul>
+                            <li>FAQ</li>
+                            <li>HomeBank</li>
+                            <li>Брокер-клиент</li>
+                            <li>СЗДО</li>
+                            <li>ККД</li>
+                            <li>Телебанк</li>
+                            <li>Финпортал</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#wikiManage">Администрирование</a>
+                        <ul>
+                            <li>Article manager</li>
+                            <li>Category manager</li>
+                            <li>Section manager</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div> <!-- end of navContentSidePanel -->
-
-            <!-- hot-phone-side-pane -->
-        <div id="hotPhoneSidePanel" class="panel panel-danger">
-            <div class="panel-heading">
-                <h3 class="panel-title">Горячие телефоны</h3>
-            </div>
-            <div class="panel-body">
-                01 - пожарная охрана
-                02 - милиция
-                03 - скорая медицинская помощь
-                04 - "Мосгаз"
-                051 - Московская служба психологической помощи населению (многоканальный круглосуточный телефон доверия)
-                (495) 937-99-11 - служба спасения
-                (495) 261-35-42, (495) 261-63-66 - водопровод, канализация (аварии на городских подземных коммуникациях)
-                (495) 688-22-52 - бюро регистрации несчастных случаев
-            </div>
-        </div> <!-- end of hotPhoneSidePanel -->
-               
-        <!-- usefull-links-side-panel -->
-        <div id="usefullLinksSidePanel" class="panel panel-info">
-            <div class="panel-heading">
-                        <h3 class="panel-title">
-                            <a href="#usefull-links">
-                                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;
-                            Полезные ссылки</a>
-                        </h3>
-            </div>
-            <div class="panel-body">
-                        <ul class="list-unstyled">
-                         <li>
-                           <h5>Приложения</h5>
-                           <h6><a href="#">Tempus in, lacus. Duis tempor posuere diam. Suspendisse vel tellus quis nunc malesuada porta. &#8230;</a></h6>
-                           <h6><a href="#">Nulla id magna sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam&#8230;</a></h6>
-                           <h5>February 18, 2008</h5>
-                           <h6><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. &#8230;</a></h6>
-                         </li>
-                         <li>
-                           <h5>Ресурсы</h5>
-                           <h6><a href="#"> Sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam. Suspendisse </a></h6>
-                           <h6><a href="#">Ipsum dolor sit amet, consectetuer adipiscing elit. In nec &#8230;</a></h6>
-                         </li>
-                        </ul>
-            </div>
-        </div> <!-- end of usefullLinksSidePanel -->
-            
-            <!-- news-side-panel -->
-        <div id="newsSidePanel" class="panel panel-success">
-            <div class="panel-heading">
-                    <h3 class="panel-title">
-                        <a href="#news">
-                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;
-                        Новости
-                            &nbsp;<span class="badge" style="margin-top:-1em">7</span></a>
-                    </h3>
-            </div>
-            <div class="panel-body">
-                    <ul class="list-unstyled">
-                     <li>
-                       <h5>June 23, 2008</h5>
-                       <h6><a href="#">Tempus in, lacus. Duis tempor posuere diam. Suspendisse vel tellus quis nunc malesuada porta. &#8230;</a></h6>
-                     </li>
-                     <li>
-                       <h5>March 4, 2008</h5>
-                       <h6><a href="#">Nulla id magna sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam&#8230;</a></h6>
-                     </li>
-                     <li>
-                       <h5>February 18, 2008</h5>
-                       <h6><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. &#8230;</a></h6>
-                     </li>
-                     <li>
-                       <h5>February 12, 2008</h5>
-                       <h6><a href="#"> Sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam. Suspendisse </a></h6>
-                     </li>
-                     <li>
-                       <h5>February 1, 2008</h5>
-                       <h6><a href="#">Ipsum dolor sit amet, consectetuer adipiscing elit. In nec &#8230;</a></h6>
-                     </li>
-                    </ul>
-            </div>
-        </div> <!-- end of newsSidePanel -->
     </aside> <!-- end of asideContent col -->
 
     <!-- main content -->
     <div id="mainContent" class="col-sm-9" data-spy="scroll" data-target="#nav-content-side">	  
-        <section id="infoBoard"> 
-            <!-- Информационная доска -->
-            <div class="panel panel-warning">
+        <section id="wikiSection"> 
+            <!-- Разделы базы знаний (в разрезе сопровождаемых систем) -->
+            <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Информационная доска</h3>
+                        <h3 class="panel-title">
+                                Разделы базы знаний
+                            <!--img src="../../static/imgs/Wiki.JPG" class="img-responsive2"-->
+                        </h3>
                     </div>
                     <div class="panel-body">
                         <div class="row crop">
                             <div class="col-sm-2 crop">
                                 <a href="#">
-                                    <img src="../static/imgs/Logo.JPG" class="img-responsive">
+                                    <img src="../../static/imgs/help.gif" class="img-responsive">
                                 </a>
-                                    Телефоны сотрудников отдела
+                                FAQ
+                            </div>                             
+                            <div class="col-sm-2 crop">
+                                <a href="#">
+                                    <img src="../../static/imgs/gpb-home-bank.png" class="img-responsive">
+                                </a>
+                                Домашний банк
                             </div> 
                             <div class="col-sm-2 crop">
-                                <img src="../static/imgs/djangopython.jpg" class="img-responsive">
+                                <a href="#">
+                                    <img src="../../static/imgs/gpb-broker-client.png" class="img-responsive">
+                                </a>
+                                Брокер-клиент
                             </div>
                             <div class="col-sm-2 crop">
                                 <a href="#">
-                                    <img src="../static/imgs/Grafik.jpg" class="img-responsive">
+                                    <img src="../../static/imgs/gpb-szdo.png" class="img-responsive">
                                 </a>
-                                График сотрудников отдела
+                                СЗДО
                             </div>
                             <div class="col-sm-2 crop">
-                                    <img src="../static/imgs/mock_ipad.jpg" class="img-responsive">
-                                    Новые технологи учета
+                                <a href="#">
+                                    <img src="../../static/imgs/gpb-kkd.png" class="img-responsive">
+                                </a>
+                                Картотека клиентских досье
                             </div>
-                            <div class="col-sm-2 crop"></div>
                             <div class="col-sm-2 crop">
-                                    <img src="../static/imgs/mock_ipad.jpg" class="img-responsive">
-                                    Маршруты транспорта
+                                <a href="#">
+                                    <img src="../../static/imgs/gpb-telebank.png" class="img-responsive">
+                                </a>
+                                Телебанк
+                            </div>
+                            <div class="col-sm-2 crop">
+                                <a href="#">
+                                    <img src="../../static/imgs/gpb-finportal.png" class="img-responsive">
+                                </a>
+                                Финпортал
                             </div>
                         </div>
+                     </div>
+                </div> 
+        </section> <!-- end of Wiki section panel -->
 
-                        <div class="col-sm-2 crop"></div>
-                            <div class="col-sm-2 crop">
-                             <img src="../static/imgs/myhome.jpg" class="img-responsive">
-                            </div> 
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../static/imgs/templatemo_menu_05_b.jpg" class="img-responsive">
-                                </a>
-                                Регулярные выражения
-                            </div>
-                            <div class="col-sm-2 crop">
-                                <img src="../static/imgs/mock_nexus.jpg" class="img-responsive">
-                            </div>
-                            <div class="col-sm-2 crop">
-                                    <img src="../static/imgs/Wiki.JPG" class="img-responsive">
-                            </div>
-                            <div class="col-sm-2 crop">
-                                    <a href="#">
-                                            <img src="../static/imgs/Grafik.jpg" class="img-responsive">
-                                        </a>
-                                            Актуальный график сотрудников
-                            </div>
-                            <div class="col-sm-2 crop">
-                                    <a href="#">
-                                    <img src="../static/imgs/landscape.jpg" class="img-responsive">
-                                </a>
-                                Телефоны дежурных служб
-                            </div>
-                            <div class="col-sm-2 crop"></div>
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../static/imgs/landscape-2.jpg" class="img-responsive">
-                                </a>
-                                Миграция филиалов
-                            </div> 
-                            <div class="col-sm-2 crop">
-                                <img src="../static/imgs/djangopython.jpg" class="img-responsive">
-                            </div>
-                            <div class="col-sm-2 crop">
-                                <img src="../static/imgs/templatemo_menu_01_b.jpg" class="img-responsive">
-                            </div>
-                            <div class="col-sm-2 crop"></div>
-                    </div>
-                </div> <!-- end of infoBoardPanel -->
-        </section>
         <section id="about">
              <div class="container2">
              <!-- строка 3 -->
                  <div class="row">
                      <div class="col-sm-2">
-                         <img src="../static/imgs/mock_ipad.jpg" class="img-responsive">
+                         <img src="../../static/imgs/mock_ipad.jpg" class="img-responsive">
                      </div>
                      <div class="col-sm-offset-1 col-sm-9">
                          <h3>Lorem ipsum dolor sit amet</h3>
@@ -415,7 +331,7 @@
                          были использованы в работе начиная с 1960-ых, и очень даже похоже, что еще с 16-го века</p>
                      </div>
                      <div class="col-sm-offset-1 col-sm-9">
-                         <img src="../static/imgs/mock_nexus.jpg" class="img-responsive">
+                         <img src="../../static/imgs/mock_nexus.jpg" class="img-responsive">
                      </div>
                  </div>
              </div>
@@ -548,13 +464,13 @@
         <div class="col-sm-3">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="../static/imgs/logo.png" class="img-responsive">
+                    <img src="../../static/imgs/logo.png" class="img-responsive">
                 </div>
                 <div class="col-sm-4">
-                    <img src="../static/imgs/djangopython.jpg" class="img-responsive">
+                    <img src="../../static/imgs/djangopython.jpg" class="img-responsive">
                 </div>
                 <div class="col-sm-4">
-                    <img src="../static/imgs/bs.png" class="img-responsive">
+                    <img src="../../static/imgs/bs.png" class="img-responsive">
                 </div>
             </div>
          </div>
@@ -594,8 +510,8 @@
     </div>
  </footer>
 
-    <script src="../static/js/jquery-3.3.1.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
 
 </body>
 </html>
