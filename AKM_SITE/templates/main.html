@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AskMe - информационный портал отдела ДБО</title>
 
-    <link rel="stylesheet" href="../../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../../static/css/wiki.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/base.css">
 
     <!--[if lt IE 9]>
         <script src="../static/js/html5shiv.min.js"></script>
@@ -21,8 +21,8 @@
     <nav class="navbar navbar-default navbar-fixed-top"> 
         
         <div class="navbar-header">
-            <a class="brand-logo" href="../main/index.html"> 
-                <img src="../../static/imgs/AkmLogo3D-black.png" 
+            <a class="brand-logo" href="../templates/main.html"> 
+                <img src="../static/imgs/AkmLogo3D-black.png" 
                 class="img-responsive" alt="Главная" />
             </a>
         </div> <!-- end navbar-header -->
@@ -41,7 +41,7 @@
             </form>
             <!-- main menu -->
             <ul id="nav-menu" class="nav navbar-nav">
-                <li class="active"><a href="#wiki">
+                <li class="active"><a href="../wiki/templates/wiki.html">
                     <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
                     Wiki</a></li>
                 <li><a href="#logs">
@@ -89,7 +89,7 @@
             <h4><span id="navMenuInfoBarTitle">Информационный портал отдела ДБО ФЛ&nbsp; &nbsp;</span>
                 <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                 &nbsp; &nbsp;
-                <span id="navMenuInfoBarApp">База знаний по сопровождаемым системам</span>
+                <span id="navMenuInfoBarApp">Главная</span>
             </h4>
         </div> <!-- end of navMenuInfoBar -->
 
@@ -106,7 +106,7 @@
                 <!-- ext-menu-basic-content -->
                 <ul class="basic-content list-inline list-unstyled">
                     <li>
-                    <a href="#wiki" role="button" class="btn">
+                    <a href="../wiki/templates/wiki.html" role="button" class="btn">
                         <h4>WIKI</h4>
                         <h5>
                             База знаний отдела
@@ -175,7 +175,7 @@
 </header>
 
 <!-- ================================================================================= -->
-<!--                                 WIKI                                              -->
+<!--                                 MAIN                                              -->
 <!-- ================================================================================= -->
 <!-- basic Content -->
 <div id="basicContent" class ="row">
@@ -185,12 +185,13 @@
         <div id="content-nav-side-panel" class="panel panel-primary" 
                 data-spy="affix" data-offset-top="30">
             <div class="panel-heading">
-                <h4 class="panel-title"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                    &nbsp;                           
-                    <a href="#top">Начало</a>
-                </h4>
+                <div class="panel-title">             
+                    <a href="#top">
+                        <span class="glyphicon glyphicon-th-list" 
+                        aria-hidden="true"></span></a>&nbsp;Разделы                        
+                </div>
                    <!-- site local search panel -->
-                    <form id="searchLocal" role="search">
+                    <!--form id="searchLocal" role="search">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Поиск в разделе...">
                             <button id="btnSearchLocal" type="submit" class="btn btn-md">
@@ -199,101 +200,192 @@
                                     </span>
                                 </button>
                         </div>
-                    </form>  
+                    </form-->  
                
             </div>
 
             <!-- Навигационное меню по разделам контента -->
             <div id="navContentSidePanel" class="panel-body">
-                <ul class="list-unstyled">
-                    <li class="active">
-                        <a href="#wikiSection">Разделы</a>
-                        <ul>
-                            <li>FAQ</li>
-                            <li>HomeBank</li>
-                            <li>Брокер-клиент</li>
-                            <li>СЗДО</li>
-                            <li>ККД</li>
-                            <li>Телебанк</li>
-                            <li>Финпортал</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#wikiManage">Администрирование</a>
-                        <ul>
-                            <li>Article manager</li>
-                            <li>Category manager</li>
-                            <li>Section manager</li>
-                        </ul>
-                    </li>
+                <ul class="list-unstyled">                        <!--li class="active">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        &nbsp;<a href="index5.html">Главная</a>
+                    </li-->
+                        <li class="active"><a href="#infoBoard">Информ-доска</a></li>
+                    <!--li><a href="#features">График</a></li>
+                    <li><a href="#pricing">Faq</a></li-->
                 </ul>
             </div>
         </div> <!-- end of navContentSidePanel -->
+
+            <!-- hot-phone-side-pane -->
+        <div id="hotPhoneSidePanel" class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Горячие телефоны</h3>
+            </div>
+            <div class="panel-body">
+                01 - пожарная охрана
+                02 - милиция
+                03 - скорая медицинская помощь
+                04 - "Мосгаз"
+                051 - Московская служба психологической помощи населению (многоканальный круглосуточный телефон доверия)
+                (495) 937-99-11 - служба спасения
+                (495) 261-35-42, (495) 261-63-66 - водопровод, канализация (аварии на городских подземных коммуникациях)
+                (495) 688-22-52 - бюро регистрации несчастных случаев
+            </div>
+        </div> <!-- end of hotPhoneSidePanel -->
+               
+        <!-- usefull-links-side-panel -->
+        <div id="usefullLinksSidePanel" class="panel panel-info">
+            <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a href="#usefull-links">
+                                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;
+                            Полезные ссылки</a>
+                        </h3>
+            </div>
+            <div class="panel-body">
+                        <ul class="list-unstyled">
+                         <li>
+                           <h5>Приложения</h5>
+                           <h6><a href="#">Tempus in, lacus. Duis tempor posuere diam. Suspendisse vel tellus quis nunc malesuada porta. &#8230;</a></h6>
+                           <h6><a href="#">Nulla id magna sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam&#8230;</a></h6>
+                           <h5>February 18, 2008</h5>
+                           <h6><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. &#8230;</a></h6>
+                         </li>
+                         <li>
+                           <h5>Ресурсы</h5>
+                           <h6><a href="#"> Sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam. Suspendisse </a></h6>
+                           <h6><a href="#">Ipsum dolor sit amet, consectetuer adipiscing elit. In nec &#8230;</a></h6>
+                         </li>
+                        </ul>
+            </div>
+        </div> <!-- end of usefullLinksSidePanel -->
+            
+            <!-- news-side-panel -->
+        <div id="newsSidePanel" class="panel panel-success">
+            <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a href="#news">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;
+                        Новости
+                            &nbsp;<span class="badge" style="margin-top:-1em">7</span></a>
+                    </h3>
+            </div>
+            <div class="panel-body">
+                    <ul class="list-unstyled">
+                     <li>
+                       <h5>June 23, 2008</h5>
+                       <h6><a href="#">Tempus in, lacus. Duis tempor posuere diam. Suspendisse vel tellus quis nunc malesuada porta. &#8230;</a></h6>
+                     </li>
+                     <li>
+                       <h5>March 4, 2008</h5>
+                       <h6><a href="#">Nulla id magna sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam&#8230;</a></h6>
+                     </li>
+                     <li>
+                       <h5>February 18, 2008</h5>
+                       <h6><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. &#8230;</a></h6>
+                     </li>
+                     <li>
+                       <h5>February 12, 2008</h5>
+                       <h6><a href="#"> Sed dolor sollicitudin laoreet. tempus in, lacus. Duis tempor posuere diam. Suspendisse </a></h6>
+                     </li>
+                     <li>
+                       <h5>February 1, 2008</h5>
+                       <h6><a href="#">Ipsum dolor sit amet, consectetuer adipiscing elit. In nec &#8230;</a></h6>
+                     </li>
+                    </ul>
+            </div>
+        </div> <!-- end of newsSidePanel -->
     </aside> <!-- end of asideContent col -->
 
     <!-- main content -->
     <div id="mainContent" class="col-sm-9" data-spy="scroll" data-target="#nav-content-side">	  
-        <section id="wikiSection"> 
-            <!-- Разделы базы знаний (в разрезе сопровождаемых систем) -->
+        <section id="infoBoard"> 
+            <!-- Информационная доска -->
             <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                                Разделы базы знаний
-                            <!--img src="../../static/imgs/Wiki.JPG" class="img-responsive2"-->
-                        </h3>
+                <div class="panel-heading">
+                    <div class="panel-title">
+                            <span class="glyphicon glyphicon-wrench" 
+                            aria-hidden="true"></span>&nbsp;Информационная доска
                     </div>
-                    <div class="panel-body">
-                        <div class="row crop">
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../../static/imgs/help.gif" class="img-responsive">
-                                </a>
-                                FAQ
-                            </div>                             
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../../static/imgs/gpb-home-bank.png" class="img-responsive">
-                                </a>
-                                Домашний банк
-                            </div> 
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../../static/imgs/gpb-broker-client.png" class="img-responsive">
-                                </a>
-                                Брокер-клиент
-                            </div>
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../../static/imgs/gpb-szdo.png" class="img-responsive">
-                                </a>
-                                СЗДО
-                            </div>
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../../static/imgs/gpb-kkd.png" class="img-responsive">
-                                </a>
-                                Картотека клиентских досье
-                            </div>
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../../static/imgs/gpb-telebank.png" class="img-responsive">
-                                </a>
-                                Телебанк
-                            </div>
-                            <div class="col-sm-2 crop">
-                                <a href="#">
-                                    <img src="../../static/imgs/gpb-finportal.png" class="img-responsive">
-                                </a>
-                                Финпортал
-                            </div>
+                </div>                    
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-2 crop">
+                            <a href="#">
+                             <img src="../static/imgs/Logo.JPG" class="img-responsive">
+                            </a>Телефоны сотрудников отдела
+                        </div> 
+                        <div class="col-sm-2 crop">
+                            <a href="#">
+                             <img src="../static/imgs/djangopython.jpg" class="img-responsive">
+                            </a>
+                            Django-Python
                         </div>
-                     </div>
-                </div> 
-        </section> <!-- end of Wiki section panel -->
-
-        <section id="about">
+                        <div class="col-sm-2 crop">
+                            <a href="#">
+                                 <img src="../static/imgs/Grafik.jpg" class="img-responsive">
+                            </a>
+                            График сотрудников отдела
+                        </div>
+                        <div class="col-sm-2 crop">
+                             <img src="../static/imgs/mock_ipad.jpg" class="img-responsive">
+                             Новые технологи учета
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <img src="../static/imgs/mock_ipad.jpg" class="img-responsive">
+                            Маршруты транспорта
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <img src="../static/imgs/myhome.jpg" class="img-responsive">
+                            My Home
+                        </div> 
+                    <!--/div>
+                    <div class="row"-->
+                        <div class="col-sm-2 crop">
+                            <a href="#">
+                            <img src="../static/imgs/templatemo_menu_05_b.jpg" class="img-responsive">
+                            </a>Регулярные выражения
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <img src="../static/imgs/mock_nexus.jpg" class="img-responsive">
+                            mock_nexus
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <img src="../static/imgs/Wiki.JPG" class="img-responsive">
+                            Wiki
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <a href="#">
+                                <img src="../static/imgs/flat,800x800,070,f.jpg" class="img-responsive">
+                            </a>Font Awesome Cheatsheet
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <a href="#">
+                            <img src="../static/imgs/landscape.jpg" class="img-responsive">
+                            </a>Телефоны дежурных служб
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <a href="#">
+                            <img src="../static/imgs/landscape-2.jpg" class="img-responsive">
+                            </a>Миграция филиалов
+                        </div>
+                    <!--/div>
+                    <div class="row"-->
+                        <div class="col-sm-2 crop">
+                            <img src="../static/imgs/default-photo-user.png" class="img-responsive">
+                            User-photo
+                        </div>
+                        <div class="col-sm-2 crop">
+                            <img src="../static/imgs/templatemo_menu_01_b.jpg" class="img-responsive">
+                            templatemo_menu_01
+                        </div>
+                    </div>
+                </div><!-- end of  panel-body  -->
+            </div> <!-- end of infoBoardPanel -->
+        </section>
+        <!--section id="about">
              <div class="container2">
-             <!-- строка 3 -->
                  <div class="row">
                      <div class="col-sm-2">
                          <img src="../../static/imgs/mock_ipad.jpg" class="img-responsive">
@@ -316,7 +408,7 @@
                      </div>
                  </div>
                  <hr>
-                 <!-- строка 4 -->
+      
                  <div class="row">
                      <div class="col-sm-2">
                          <h3>Lorem ipsum dolor sit amet</h3>
@@ -338,14 +430,14 @@
          </section>
          <section id="features">
              <div class="container2">
-                 <!-- строка 5 -->
+
                  <div class="row">
                      <div class="col-sm-2">
                          <h3 class="text-center">Свойства</h3>
                          <p class="text-center">Подробное описание свойств</p>
                      </div>
                  
-                     <!-- строка 6 -->
+
                      <div class="col-sm-offset-1 col-sm-9">
                          <div class="row">
                              <div class="col-sm-2 col-md-4">
@@ -374,13 +466,13 @@
          
          <section id="pricing">
              <div class="container2">
-                 <!-- строка 7 -->
+
                  <div class="row">
                      <div class="col-sm-offset-3 col-sm-9">
                          <h3 class="text-center price-headline">Цены</h3>
                      </div>
                  </div>
-                 <!-- строка 8 - Table -->
+
                  <div class="row">
                      <div class="col-sm-offset-3 col-sm-8 col-sd-offset-1">
                          <table class="table table-striped table-hover">
@@ -455,7 +547,7 @@
                  </div>
                  <button type="submit" class="btn btn-primary">Отправить</button>
              </form>
-         </section>
+         </section-->
     </div> <!-- end of mainContent col -->
 </div> <!-- end of basic content -->                
 
@@ -510,8 +602,8 @@
     </div>
  </footer>
 
-    <script src="../../static/js/jquery-3.3.1.min.js"></script>
-    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
 
 </body>
 </html>

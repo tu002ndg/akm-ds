@@ -201,7 +201,7 @@ nav form#searchLocal {
 }
 
 #mainContent #infoBoard .row .col-sm-2 {
-   max-height: 10em; 
+   min-height: 10em; 
 }
 
 .crop img {
@@ -209,11 +209,36 @@ nav form#searchLocal {
     overflow: hidden;
 }
 
-#mainContent #infoBoard .panel-body {
+/*
+#infoBoard .panel-body .row >div {
+    text-align: center;
+}
+
+#infoBoard .panel-body .row >div img {
+    margin: auto;
+}
+*/
+
+
+  /* main content */
+
+ #mainContent .panel-body .row >div {
+    text-align: center;
+}
+
+#mainContent .panel-body .row >div img {
+    margin: auto;
+}
+
+#mainContent .panel-body {
+    font-size: normal;
+ }
+
+ #mainContent #infoBoard .panel-body {
     font-size: smaller;
  }
 
- /* main content */
+
 #mainContent {
     /*
     float: right;

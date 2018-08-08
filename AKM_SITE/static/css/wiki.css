@@ -1,13 +1,22 @@
 @import url("base.css");
 
 
+/*
 
-
-#wikiSection .panel-body .row >div {
+#basicContent .panel-body .row >div {
     text-align: center;
 }
 
-#wikiSection .panel-body .row >div img {
+#basicContent .panel-body .row >div img {
     margin: auto;
 }
 
+
+#wikiAdmin .panel-body .row >div {
+    text-align: center;
+}
+
+#wikiAdmin .panel-body .row >div img {
+    margin: auto;
+}
+*/
