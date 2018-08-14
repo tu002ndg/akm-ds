@@ -1,0 +1,132 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "ERDDataModel",
+			"_id": "AAAAAAFlLelCgn5RiAw=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Data Model1",
+			"ownedElements": [
+				{
+					"_type": "ERDDiagram",
+					"_id": "AAAAAAFlLelCg35S4pk=",
+					"_parent": {
+						"$ref": "AAAAAAFlLelCgn5RiAw="
+					},
+					"name": "ERD-Wiki",
+					"ownedViews": [
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAFlLerl8H5ZARE=",
+							"_parent": {
+								"$ref": "AAAAAAFlLelCg35S4pk="
+							},
+							"model": {
+								"$ref": "AAAAAAFlLerl8H5XzIg="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFlLerl8X5aLOM=",
+									"_parent": {
+										"$ref": "AAAAAAFlLerl8H5ZARE="
+									},
+									"font": "Arial;13;1",
+									"left": 72,
+									"top": 69,
+									"width": 85.61181640625,
+									"height": 13,
+									"text": "Article"
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAFlLerl8X5b6ao=",
+									"_parent": {
+										"$ref": "AAAAAAFlLerl8H5ZARE="
+									},
+									"model": {
+										"$ref": "AAAAAAFlLerl8H5XzIg="
+									},
+									"subViews": [
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAFlLesfMH5nviY=",
+											"_parent": {
+												"$ref": "AAAAAAFlLerl8X5b6ao="
+											},
+											"model": {
+												"$ref": "AAAAAAFlLesfD35kj2s="
+											},
+											"font": "Arial;13;0",
+											"left": 77,
+											"top": 92,
+											"width": 75.61181640625,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 72,
+									"top": 87,
+									"width": 85.61181640625,
+									"height": 23
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 72,
+							"top": 64,
+							"width": 85.61181640625,
+							"height": 46,
+							"nameLabel": {
+								"$ref": "AAAAAAFlLerl8X5aLOM="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAFlLerl8X5b6ao="
+							}
+						}
+					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAFlLerl8H5XzIg=",
+					"_parent": {
+						"$ref": "AAAAAAFlLelCgn5RiAw="
+					},
+					"name": "Article",
+					"columns": [
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAFlLesfD35kj2s=",
+							"_parent": {
+								"$ref": "AAAAAAFlLerl8H5XzIg="
+							},
+							"name": "Column1"
+						}
+					]
+				}
+			]
+		}
+	]
+}
